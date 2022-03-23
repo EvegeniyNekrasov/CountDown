@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -8,6 +8,9 @@
 
 :root {
   --blue: #0624de;
+  --darkBlue: #001931;
+  --dark: #000000;
+  --light: #ffffff;
 }
 
 html {
@@ -15,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
   /* background:  */
   background-size: cover;
 }
@@ -66,11 +69,11 @@ section i {
 }
 
 #unsplashImage {
-  max-height: 500px;
+  max-height: 300px;
   width: 100%;
 }
 .imageDetails {
-  padding: 10px;
+  padding: 5px;
   color: var(--blue);
   text-decoration: none;
 }
@@ -84,8 +87,27 @@ section i {
   font-weight: 600;
   padding: 1.1rem;
   margin: 1rem 1rem 1rem;
-  /* width: 800px; */
   color: #0624de;
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.jokesField {
+  width: 800px;
+  height: 200px;
+  background-color: var(--darkBlue);
+  color: var(--light);
+  border-radius: 25px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1rem;
+  padding: 10px;
 }
 
 footer {
@@ -95,5 +117,38 @@ footer {
   width: 100%;
   text-align: center;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+  header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  header p {
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+  section i {
+    font-size: 2rem;
+  }
+
+  #countDown {
+    font-size: 5rem;
+  }
+
+  .jokesField {
+    max-width: 400px;
+    padding: 15px;
+    height: 200px;
+    background-color: var(--darkBlue);
+    color: var(--light);
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
 }
