@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #0624de;
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  /* background:  */
+  background-size: cover;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+span {
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: var(--blue);
+}
+header ul li {
+  list-style: none;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.4rem;
+  font-weight: 600;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 80%;
+  color: var(--blue);
+}
+
+section i {
+  font-size: 5rem;
+}
+
+#unsplashImage {
+  max-height: 500px;
+  width: 100%;
+}
+.imageDetails {
+  padding: 10px;
+  color: var(--blue);
+  text-decoration: none;
+}
+#countDown {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+  font-weight: 600;
+  padding: 1.1rem;
+  margin: 1rem 1rem 1rem;
+  /* width: 800px; */
+  color: #0624de;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
