@@ -40,4 +40,4 @@ async function generateJoke() {
 }
 
 generateJoke();
-setInterval(generateJoke, 5000);
+setInterval(generateJoke, 10000);
